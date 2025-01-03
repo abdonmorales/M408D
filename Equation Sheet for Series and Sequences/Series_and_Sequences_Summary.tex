@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Summary of Tests and Equations for Series and Sequences}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{1. Basic Definitions}
+
+\begin{itemize}
+    \item \textbf{Sequence Convergence}: A sequence $\{a_n\}$ converges to $L$ if $\lim_{n \to \infty} a_n = L$.
+    \item \textbf{Series Convergence}: The series $\sum a_n$ converges if the partial sums $S_n = \sum_{k=1}^n a_k$ approach a finite limit as $n \to \infty$.
+\end{itemize}
+
+\section*{2. Tests for Series Convergence and Divergence}
+
+\subsection*{Divergence Test (Test for Divergence)}
+If $\lim_{n \to \infty} a_n \neq 0$, then the series $\sum a_n$ \textbf{diverges}. If $\lim_{n \to \infty} a_n = 0$, this test is inconclusive.
+
+\subsection*{Geometric Series Test}
+For a series $\sum ar^n$, it converges if $|r| < 1$ and diverges if $|r| \geq 1$.
+\begin{itemize}
+    \item \textbf{Sum for a convergent geometric series}: $S = \frac{a}{1 - r}$.
+\end{itemize}
+
+\subsection*{p-Series Test}
+A p-series $\sum \frac{1}{n^p}$ converges if $p > 1$ and diverges if $p \leq 1$.
+
+\subsection*{Comparison Test}
+For $\sum a_n$ and a positive comparison series $\sum b_n$:
+\begin{itemize}
+    \item If $0 \leq a_n \leq b_n$ and $\sum b_n$ converges, then $\sum a_n$ converges.
+    \item If $0 \leq b_n \leq a_n$ and $\sum b_n$ diverges, then $\sum a_n$ diverges.
+\end{itemize}
+
+\subsection*{Limit Comparison Test}
+If $\lim_{n \to \infty} \frac{a_n}{b_n} = L$, where $0 < L < \infty$, then $\sum a_n$ and $\sum b_n$ both converge or diverge.
+
+\subsection*{Ratio Test}
+For a series $\sum a_n$, calculate $L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|$:
+\begin{itemize}
+    \item If $L < 1$, the series converges absolutely.
+    \item If $L > 1$, the series diverges.
+    \item If $L = 1$, the test is inconclusive.
+\end{itemize}
+
+\subsection*{Root Test}
+For a series $\sum a_n$, calculate $L = \lim_{n \to \infty} \sqrt[n]{|a_n|}$:
+\begin{itemize}
+    \item If $L < 1$, the series converges absolutely.
+    \item If $L > 1$, the series diverges.
+    \item If $L = 1$, the test is inconclusive.
+\end{itemize}
+
+\subsection*{Alternating Series Test (Leibniz Test)}
+For an alternating series $\sum (-1)^{n-1} b_n$:
+\begin{itemize}
+    \item The series converges if $b_n$ is decreasing and $\lim_{n \to \infty} b_n = 0$.
+\end{itemize}
+
+\section*{3. Absolute and Conditional Convergence}
+\begin{itemize}
+    \item \textbf{Absolute Convergence}: If $\sum |a_n|$ converges, then $\sum a_n$ converges absolutely.
+    \item \textbf{Conditional Convergence}: If $\sum a_n$ converges but $\sum |a_n|$ diverges, then $\sum a_n$ converges conditionally.
+\end{itemize}
+
+\section*{4. Power Series}
+A power series $\sum a_n x^n$ converges within its \textbf{radius of convergence} $R$.
+\begin{itemize}
+    \item \textbf{Interval of Convergence}: $( -R, R)$
+    \item \textbf{Ratio Test for Radius}: $R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right|$ if this limit exists.
+\end{itemize}
+
+\end{document}

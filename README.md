@@ -1,5 +1,5 @@
 # M 408D (Sequences, Series, and Multivariable Calculus)
-**Fall 2024, Dr. John Meth, The University of Texas at Austin**
+**Fall 2024, Dr. Theresa Martines, The University of Texas at Austin**
 
 *More information about math course can found at [https://www.ma.utexas.edu/academics/courses](https://www.ma.utexas.edu/academics/courses).*
 
